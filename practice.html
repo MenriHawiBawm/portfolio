@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="colorButton" onclick="makeRed()">Click Me</button>
+    <button id="sizeButton" onclick="makeBig()">make it bigger</button>
+    
+<!--java script-->
+    <script>
+        function makeBig() {
+            const bigButton = document.getElementById('sizeButton');
+            bigButton.style.padding = '50px';
+        }
+        // get the button element
+      function makeRed() {
+        const button = document.getElementById('colorButton');
+       button.style.backgroundColor = 'red';
+
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/class2.js"></script>
+    
+</head>
+<body>
+  <button id="colorButton" onclick="makeGreen ()" >Click Here</button>  
+   <button id="sizeButton" onclick="makeSmall ()">make it small</button>
+    <button id="showAlertButton" onclick="showAlert()">Happy Rose Day</button>
+
+   <!--java script-->
+   <script>
+    function makeSmall() {
+        const bigButton = document.getElementById('sizeButton');
+       bigButton.style.padding = '30px';
+    }
+    // get the button element
+    function makeGreen() {
+        const button = document.getElementById('colorButton');
+        button.style.backgroundColor = 'green';
+        
+    } 
+        function showAlert() {
+          const showAlertButton = document.getElementById('showAlertButton');
+          showAlertButton.style.backgroundColor = 'red';
+          window.alert('Your button is red now')
+        }
+    
+
+   </script>
+</body>
+</html>
